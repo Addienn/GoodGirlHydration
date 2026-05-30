@@ -60,5 +60,3 @@ Playfully NSFW - suggestive praise, suggestive art, 18+, and unapologetic about 
 ## Credits
 
 Concept, copy, and chaos by a small constellation of AI collaborators. Voice lines via ElevenLabs. Tagline: "Stay thirsty. Stay good."
-
-Do not accidentally create hydration SaaS with moral consequences.
