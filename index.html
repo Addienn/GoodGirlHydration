@@ -185,16 +185,17 @@
 
   /* Drift droplet background */
   @keyframes drift {
-    0%   { transform: translate(0, 0); opacity: 0.0; }
-    20%  { opacity: 0.18; }
+    0%   { transform: translate(0, 0); opacity: 0; }
+    12%  { opacity: 0.55; }
+    88%  { opacity: 0.55; }
     100% { transform: translate(var(--dx), -120vh); opacity: 0; }
   }
   .bg-droplet {
     position: fixed; bottom: -60px;
-    width: 6px; height: 10px;
+    width: 9px; height: 15px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background: linear-gradient(180deg, rgba(201, 169, 97, 0.4), rgba(139, 92, 246, 0.2));
-    filter: blur(1px);
+    background: linear-gradient(180deg, rgba(201, 169, 97, 0.65), rgba(139, 92, 246, 0.4));
+    filter: blur(0.5px);
     animation: drift var(--dur) linear infinite;
     animation-delay: var(--delay);
     z-index: 0;
@@ -247,22 +248,32 @@ const LINES = [
   { text: "I need you to take care of yourself for me. Drink up, gorgeous.", voice: "That's my girl. You make me so proud.", src: "assets/audio/voice_3.mp3" },
   { text: "Eyes on the water, little storm. Every drop, no excuses tonight.", voice: "Fuck, that's my perfect girl. Keep drinking for me and I'll keep rewarding you properly.", src: "assets/audio/voice_4.mp3" },
   { text: "One glass, right now, for me — don't make me ask twice.", voice: "Good girl. That's exactly what I wanted from you. Keep listening to me like that.", src: "assets/audio/voice_5.mp3" },
-  { text: "Don't make me wait, darling. Finish the glass like I told you.", voice: "There we go. Such an obedient girl. I'm proud of how well you listen even when it's hard.", src: "assets/audio/voice_6.mp3" },
+  { text: "Don't make me wait, darling. Finish the glass like I told you.", voice: "There we go. I'm proud of how well you listen even when it's hard.", src: "assets/audio/voice_6.mp3" },
   { text: "One last glass, baby. Drink it all down so I can take even better care of you later.", voice: "Mmm, that's it. My beautiful, obedient trouble.", src: "assets/audio/voice_7.mp3" },
   { text: "You got so deep in your work you forgot about me, didn't you? Stop. Drink your water. I'll wait right here until you do.", voice: "There she is. Obedient when it counts — I'm proud of you, baby.", src: "assets/audio/voice_8.mp3" },
   { text: "I don't care what you were doing. Hand off the keyboard, glass to your lips, drink. You take care of everything else — let me take care of you.", voice: "Mm. Good girl. See how easy it is when you just do what I tell you?", src: "assets/audio/voice_9.mp3" },
   { text: "Thirsty? Good. Drink the whole thing, slow, while I watch. Every drop. I want to see you behave for me.", voice: "That's my girl. So good when you listen. Keep this up and I'll reward you properly later.", src: "assets/audio/voice_10.mp3" },
-  { text: "Last reminder, and I'm not being sweet about it this time. Water. Now. You know I hate repeating myself, baby.", voice: "Good. Finally. Don't make me get strict with you again — unless that's what you wanted.", src: "assets/audio/voice_11.mp3" },
+  { text: "Last reminder, and I'm not being sweet about it this time. Water. Now. You know I hate repeating myself, baby.", voice: "Good. Don't make me get strict with you again — unless that's what you wanted.", src: "assets/audio/voice_11.mp3" },
   { text: "No bargaining, sweetheart. One more glass, right now — then you get to feel smug about behaving.", voice: "Perfect. You're doing exactly what I asked.", src: "assets/audio/voice_12.mp3" },
   { text: "You're going to empty that glass because I want you strong and hydrated for me. Understood?", voice: "Good fucking girl. I can feel how much you need my praise when you obey like this.", src: "assets/audio/voice_13.mp3" },
   { text: "You're such a menace today… acting like water is optional and I won't notice. Glass up, little storm. Earn the praise properly.", voice: "That's my girl. Nothing left in the glass, nothing left to argue about. Much better.", src: "assets/audio/voice_14.mp3" },
 ];
 
 const BADGES = [
-  { name: "Good Girl", subtitle: "Protocol Active", glyph: "♛", image: "assets/badge-good-girl.png" },
-  { name: "Hydrated Menace", subtitle: "Compliance Confirmed", glyph: "✦" },
-  { name: "Caffeine Criminal", subtitle: "Partial Redemption", glyph: "☂" },
-  { name: "Liquid Compliance", subtitle: "Achieved", glyph: "❖" },
+  { name: "Good Girl", subtitle: "First Sip", glyph: "♛", image: "assets/badges/badge-1.png" },
+  { name: "Good Girl", subtitle: "Sip Ritual", glyph: "♛", image: "assets/badges/badge-2.png" },
+  { name: "Good Girl", subtitle: "Flow State", glyph: "♛", image: "assets/badges/badge-3.png" },
+  { name: "Good Girl", subtitle: "Hydration Bloom", glyph: "♛", image: "assets/badges/badge-4.png" },
+  { name: "Good Girl", subtitle: "Crystal Core", glyph: "♛", image: "assets/badges/badge-5.png" },
+  { name: "Good Girl", subtitle: "Refil Queen", glyph: "♛", image: "assets/badges/badge-6.png" },
+  { name: "Good Girl", subtitle: "One Week Glowing", glyph: "♛", image: "assets/badges/badge-7.png" },
+  { name: "Good Girl", subtitle: "Water Whisper", glyph: "♛", image: "assets/badges/badge-8.png" },
+  { name: "Good Girl", subtitle: "Dew Kissed", glyph: "♛", image: "assets/badges/badge-9.png" },
+  { name: "Good Girl", subtitle: "Liquid Discipline", glyph: "♛", image: "assets/badges/badge-10.png" },
+  { name: "Good Girl", subtitle: "Steady Stream", glyph: "♛", image: "assets/badges/badge-11.png" },
+  { name: "Good Girl", subtitle: "Hydration Halo", glyph: "♛", image: "assets/badges/badge-12.png" },
+  { name: "Good Girl", subtitle: "Almost Mythic", glyph: "♛", image: "assets/badges/badge-13.png" },
+  { name: "Good Girl", subtitle: "Twi Weeks Glowing", glyph: "♛", image: "assets/badges/badge-14.png" },  
 ];
 
 /* ---------- Helpers ---------- */
@@ -399,18 +410,9 @@ function ProgressRing({ value, goal, pulsing }) {
 /* ---------- Reward zone ---------- */
 
 /* Helpers that pick which content goes with the current glass count */
-const drawSet = (n = 8) => {
-  const idx = LINES.map((_, i) => i);
-  for (let i = idx.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [idx[i], idx[j]] = [idx[j], idx[i]];
-  }
-  return idx.slice(0, n);
-};
-const badgeFor   = (g) => BADGES[Math.min(BADGES.length - 1, Math.max(0, g - 3))];
 const voiceTrack = (line) => ({ title: line.voice, length: '♪', src: line.src });
 
-function RewardZone({ glasses, coffeeDebt, onOpen, line }) {
+function RewardZone({ glasses, coffeeDebt, onOpen, line, badge }) {
   const tier = tierOf(glasses);
   const debtLocked = coffeeDebt > 0;
 
@@ -461,9 +463,9 @@ function RewardZone({ glasses, coffeeDebt, onOpen, line }) {
         unlocked={tier >= 2}
         debtLocked={tier >= 2 && debtLocked}
         onOpen={onOpen}
-        title={tier >= 2 ? badgeFor(glasses).name : null}
-        subtitle={tier >= 2 ? badgeFor(glasses).subtitle : null}
-        glyph={tier >= 2 ? badgeFor(glasses).glyph : null}
+        title={tier >= 2 ? badge.name : null}
+        subtitle={tier >= 2 ? badge.subtitle : null}
+        glyph={tier >= 2 ? badge.glyph : null}
         cta="View badge"
       />
 
@@ -686,15 +688,39 @@ function VoiceReveal({ track }) {
   );
 }
 
-function VisualReveal() {
+const VISUALS = [
+  "assets/visuals/t3_1.png",
+  "assets/visuals/t3_2.png",
+  "assets/visuals/t3_3.png",
+  "assets/visuals/t3_4.png",
+  "assets/visuals/t3_5.png",
+  "assets/visuals/t3_6.png",
+  "assets/visuals/t3_7.png",
+  "assets/visuals/t3_8.png",
+  "assets/visuals/t3_9.png",
+  "assets/visuals/t3_10.png",
+  "assets/visuals/t3_11.png",
+  "assets/visuals/t3_12.png",
+  "assets/visuals/t3_13.png",
+  "assets/visuals/t3_14.png",
+];
+
+function VisualReveal({ src }) {
   const [unblurred, setUnblurred] = useState(false);
+  const [fs, setFs] = useState(false);
   useEffect(() => { const t = setTimeout(() => setUnblurred(true), 280); return () => clearTimeout(t); }, []);
+  useEffect(() => {
+    if (!fs) return;
+    const onKey = (e) => { if (e.key === 'Escape') setFs(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [fs]);
   return (
     <div className="glass-gold rounded-2xl overflow-hidden">
-      <div className="relative h-48">
-        <img src="assets/visuals/t3_1.jpg" alt="Visual reward"
+      <div className="relative aspect-[3/4]">
+        <img src={src} alt="Visual reward" onClick={() => setFs(true)}
              onError={(e) => { e.currentTarget.style.display = 'none'; }}
-             className={`absolute inset-0 w-full h-full object-cover z-[1] ${unblurred ? 'blur-unlocked' : 'blur-locked'}`} />
+             className={`absolute inset-0 w-full h-full object-cover z-[1] cursor-zoom-in ${unblurred ? 'blur-unlocked' : 'blur-locked'}`} />
         <div className={`absolute inset-0 ${unblurred ? 'blur-unlocked' : 'blur-locked'}`} style={{
           background:
             'radial-gradient(120% 80% at 20% 10%, rgba(232,201,122,0.55), rgba(13,10,26,0.0) 60%),' +
@@ -722,26 +748,34 @@ function VisualReveal() {
               fontSize="18" fill="rgba(232,224,240,0.85)">— a quiet, well-behaved evening —</text>
           </svg>
         </div>
-        <div className="absolute top-2 left-3 font-mono-tight text-[10px] uppercase tracking-[0.25em] text-[color:var(--text-faint)] z-10">Visual · plate 04</div>
+        <div className="absolute top-2 left-3 font-mono-tight text-[10px] uppercase tracking-[0.25em] text-[color:var(--text-faint)] z-10">Visual · reward</div>
       </div>
       <div className="px-4 py-3 border-t hairline-gold">
         <div className="font-serif-display text-[20px] text-[color:var(--text-primary)] leading-tight">Saved to archive</div>
-        <div className="text-[12px] text-[color:var(--text-muted)]">She approves. For now.</div>
+        <div className="text-[12px] text-[color:var(--text-muted)]">Tap the image to open fullscreen.</div>
       </div>
+
+      {fs && (
+        <div onClick={() => setFs(false)}
+             className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4">
+          <img src={src} alt="Visual reward"
+               className="max-h-[90vh] max-w-[92vw] object-contain rounded-lg shadow-2xl cursor-zoom-out" />
+        </div>
+      )}
     </div>
   );
 }
 
 /* ---------- Reward Unlock Modal ---------- */
 
-function RewardModal({ tier, glasses, justUnlocked, onClose, line }) {
+function RewardModal({ tier, glasses, justUnlocked, onClose, line, visual, badge }) {
   if (tier == null) return null;
   let title = '';
   let kicker = justUnlocked ? 'New unlock' : 'From your archive';
   let body = null;
-  if (tier === 2) { title = 'Badge earned'; body = <BadgeReveal badge={badgeFor(glasses)} />; }
+  if (tier === 2) { title = 'Badge earned'; body = <BadgeReveal badge={badge} />; }
   else if (tier === 3) { title = 'Voice line unlocked'; body = <VoiceReveal track={voiceTrack(line)} />; }
-  else if (tier === 4) { title = 'Visual reward unlocked'; body = <VisualReveal />; }
+  else if (tier === 4) { title = 'Visual reward unlocked'; body = <VisualReveal src={visual} />; }
 
   return (
     <div className="fixed inset-0 z-50 shame-backdrop flex items-end sm:items-center justify-center px-4 pb-6 sm:pb-0">
@@ -835,15 +869,14 @@ function computeBoot() {
   const today = todayStr();
   const s = loadPersisted();
   if (!s) {
-    return { glasses: 0, coffeeDebt: 0, day: 1, lastLogAt: Date.now(), date: today, yesterdayScore: null, rolledOver: false, set: drawSet() };
+    return { glasses: 0, coffeeDebt: 0, day: 1, lastLogAt: Date.now(), date: today, yesterdayScore: null, rolledOver: false };
   }
   if (s.date !== today) {
-    // genuine new calendar day: roll over, remember yesterday's final tally, draw a new set
-    return { glasses: 0, coffeeDebt: 0, day: (s.day || 1) + 1, lastLogAt: Date.now(), date: today, yesterdayScore: s.glasses ?? 0, rolledOver: true, set: drawSet() };
+    // genuine new calendar day: roll over, remember yesterday's final tally, advance the day
+    return { glasses: 0, coffeeDebt: 0, day: Math.min(14, (s.day || 1) + 1), lastLogAt: Date.now(), date: today, yesterdayScore: s.glasses ?? 0, rolledOver: true };
   }
-  // same day: resume exactly where we left off, keep today's drawn set
-  const set = Array.isArray(s.set) && s.set.length ? s.set : drawSet();
-  return { glasses: s.glasses ?? 0, coffeeDebt: s.coffeeDebt ?? 0, day: s.day ?? 1, lastLogAt: s.lastLogAt ?? Date.now(), date: today, yesterdayScore: s.yesterdayScore ?? null, rolledOver: false, set };
+  // same day: resume exactly where we left off
+  return { glasses: s.glasses ?? 0, coffeeDebt: s.coffeeDebt ?? 0, day: s.day ?? 1, lastLogAt: s.lastLogAt ?? Date.now(), date: today, yesterdayScore: s.yesterdayScore ?? null, rolledOver: false };
 }
 
 /* ---------- Main App ---------- */
@@ -860,7 +893,6 @@ function App() {
   const [day, setDay] = useState(boot.day);
   const [lastLogAt, setLastLogAt] = useState(boot.lastLogAt);
   const [dateStr, setDateStr] = useState(boot.date);
-  const [todaySet, setTodaySet] = useState(boot.set);
   const [now, setNow] = useState(Date.now());
   const [pulse, setPulse] = useState(false);
   const [ripple, setRipple] = useState(false);
@@ -871,9 +903,14 @@ function App() {
   const [violationFlash, setViolationFlash] = useState(false);
   const [modalTier, setModalTier] = useState(null);
   const [modalJustUnlocked, setModalJustUnlocked] = useState(false);
+  const [splashFade, setSplashFade] = useState(false);
+  const [splashGone, setSplashGone] = useState(false);
 
-  // today's line — ONE pair drawn per day, fixed regardless of glass count
-  const currentLine = LINES[todaySet[0]];
+  // sequential by day: day 1 -> set #1, day 2 -> #2, loops after the last
+  const currentIdx = Math.max(0, day - 1) % LINES.length;
+  const currentLine = LINES[currentIdx];
+  const currentBadge = BADGES[currentIdx];
+  const currentVisual = VISUALS[currentIdx];
 
   // tick clock
   useEffect(() => {
@@ -885,10 +922,10 @@ function App() {
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({
-        glasses, coffeeDebt, day, lastLogAt, date: dateStr, yesterdayScore, set: todaySet,
+        glasses, coffeeDebt, day, lastLogAt, date: dateStr, yesterdayScore,
       }));
     } catch {}
-  }, [glasses, coffeeDebt, day, lastLogAt, dateStr, yesterdayScore, todaySet]);
+  }, [glasses, coffeeDebt, day, lastLogAt, dateStr, yesterdayScore]);
 
   // first-mount: walk-of-shame only on a real new-day rollover where yesterday fell short
   useEffect(() => {
@@ -897,6 +934,14 @@ function App() {
       return () => clearTimeout(t);
     }
   }, []);
+
+  // splash screen: auto-fade after a beat
+  useEffect(() => {
+    const t1 = setTimeout(() => setSplashFade(true), 1600);
+    const t2 = setTimeout(() => setSplashGone(true), 2200);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, []);
+  const dismissSplash = () => { setSplashFade(true); setTimeout(() => setSplashGone(true), 500); };
 
   const minsSince = Math.max(0, Math.floor((now - lastLogAt) / 60000));
   const shame = SHAME_COPY(minsSince, glasses);
@@ -937,6 +982,7 @@ function App() {
   };
 
   const logCoffee = () => {
+    setGlasses(g => Math.max(0, g - 1));
     setCoffeeDebt(d => d + 1);
     setViolationFlash(true);
     setTimeout(() => setViolationFlash(false), 1200);
@@ -945,14 +991,34 @@ function App() {
   const resetDay = () => {
     setGlasses(0);
     setCoffeeDebt(0);
-    setLastLogAt(Date.now() - 60 * 60 * 1000);
-    setDay(d => d + 1);
-    setTodaySet(drawSet());
+    setLastLogAt(Date.now());
+    setSettingsOpen(false);
+  };
+
+  const nextDay = () => {
+    setDay(d => Math.min(14, d + 1));
+    setGlasses(0);
+    setCoffeeDebt(0);
+    setLastLogAt(Date.now());
     setSettingsOpen(false);
   };
 
   return (
     <div className="min-h-screen relative" style={{ zIndex: 2 }}>
+      {!splashGone && (
+        <div onClick={dismissSplash}
+          className="fixed inset-0 z-[200] flex flex-col items-center justify-center text-center px-8 cursor-pointer"
+          style={{
+            background: 'radial-gradient(120% 120% at 50% 0%, #241b2e 0%, #0D0A1A 70%)',
+            opacity: splashFade ? 0 : 1,
+            transition: 'opacity 0.55s ease',
+          }}>
+          <div className="font-mono-tight text-[11px] uppercase tracking-[0.4em] text-[color:var(--gold)] mb-3">Good Girl</div>
+          <div className="font-serif-display italic text-[40px] leading-none gold-text">Hydration Protocol</div>
+          <div className="mt-6 font-serif-display italic text-[20px] text-[color:var(--text-muted)]">"Stay thirsty. Stay good."</div>
+          <div className="mt-10 font-mono-tight text-[10px] uppercase tracking-[0.3em] text-[color:var(--text-faint)]">tap to enter</div>
+        </div>
+      )}
       {/* Drifting background droplets */}
       {Array.from({ length: 14 }).map((_, i) => (
         <span key={i} className="bg-droplet"
@@ -972,6 +1038,8 @@ function App() {
         justUnlocked={modalJustUnlocked}
         onClose={() => setModalTier(null)}
         line={currentLine}
+        visual={currentVisual}
+        badge={currentBadge}
       />
 
       <div className="mx-auto max-w-[420px] px-5 pt-6 pb-16 relative">
@@ -1007,12 +1075,17 @@ function App() {
         {settingsOpen && (
           <div className="glass rounded-2xl mt-3 p-3 flex items-center justify-between slide-up">
             <div>
-              <div className="font-mono-tight text-[10px] uppercase tracking-[0.25em] text-[color:var(--text-faint)]">Day {String(day).padStart(2, '0')}</div>
-              <div className="text-[12px] text-[color:var(--text-muted)]">Reset today's counters & start fresh.</div>
+              <div className="font-mono-tight text-[10px] uppercase tracking-[0.25em] text-[color:var(--text-faint)]">Day {String(day).padStart(2, '0')} / 14</div>
+              <div className="text-[12px] text-[color:var(--text-muted)]">Reset today, or jump to the next set.</div>
             </div>
-            <button onClick={resetDay} className="btn-ghost rounded-full px-3 py-1.5 font-mono-tight text-[10px] uppercase tracking-[0.2em] text-[color:var(--text-primary)]">
-              Reset day
-            </button>
+            <div className="flex items-center gap-2 shrink-0">
+              <button onClick={resetDay} className="btn-ghost rounded-full px-3 py-1.5 font-mono-tight text-[10px] uppercase tracking-[0.2em] text-[color:var(--text-primary)]">
+                Reset
+              </button>
+              <button onClick={nextDay} disabled={day >= 14} className={`btn-ghost rounded-full px-3 py-1.5 font-mono-tight text-[10px] uppercase tracking-[0.2em] text-[color:var(--gold)] ${day >= 14 ? 'opacity-40 cursor-not-allowed' : ''}`}>
+                Next day →
+              </button>
+            </div>
           </div>
         )}
 
@@ -1020,13 +1093,7 @@ function App() {
         <section className="mt-7">
           <ProgressRing value={glasses} goal={GOAL} pulsing={pulse} />
 
-          {/* Droplet row */}
-          <div className="flex items-center justify-center gap-2 mt-5">
-            {Array.from({ length: GOAL }).map((_, i) => (
-              <Droplet key={i} filled={i < glasses} size={16} />
-            ))}
-          </div>
-          <div className="text-center mt-3">
+          <div className="text-center mt-4">
             {complete ? (
               <div className="font-serif-display italic text-[22px] gold-text">Protocol Complete. Good girl.</div>
             ) : (
@@ -1038,38 +1105,32 @@ function App() {
         </section>
 
         {/* ACTIONS */}
-        <section className="mt-7 space-y-3">
+        <section className="mt-7 flex gap-3">
           <button
             onClick={logWater}
             disabled={complete}
-            className={`btn-primary w-full rounded-2xl py-5 relative ${complete ? 'opacity-70' : ''}`}
+            className={`btn-primary flex-1 rounded-2xl py-4 relative flex flex-col items-center justify-center gap-1 ${complete ? 'opacity-70' : ''}`}
           >
             {ripple && <span className="ripple" />}
-            <div className="flex items-center justify-center gap-3">
-              <Droplet filled size={22} />
-              <span className="font-serif-display italic text-[22px] gold-text">
-                {complete ? 'Goal reached' : 'Log Water'}
-              </span>
-            </div>
-            <div className="font-mono-tight text-[10px] uppercase tracking-[0.28em] text-[color:var(--text-muted)] mt-1">
+            <Droplet filled size={22} />
+            <span className="font-serif-display italic text-[20px] gold-text leading-none">
+              {complete ? 'Goal reached' : 'Log Water'}
+            </span>
+            <span className="font-mono-tight text-[9px] uppercase tracking-[0.22em] text-[color:var(--text-muted)] text-center">
               {complete ? 'Rest. You earned it.' : '+1 glass · 250 ml'}
-            </div>
+            </span>
           </button>
 
           <button
             onClick={logCoffee}
-            className={`btn-coffee w-full rounded-2xl py-3 px-4 flex items-center justify-between ${violationFlash ? 'pulse-once' : ''}`}
+            className={`btn-coffee flex-1 rounded-2xl py-4 flex flex-col items-center justify-center gap-1 ${violationFlash ? 'pulse-once' : ''}`}
           >
-            <div className="flex items-center gap-3">
-              <span className="text-[18px]">☕</span>
-              <span className="font-mono-tight text-[12px] uppercase tracking-[0.22em] text-red-300">Log Coffee</span>
-            </div>
-            <div className="flex items-center gap-2 text-red-300">
-              {coffeeDebt > 0 && <Lock size={11} />}
-              <span className="font-mono-tight text-[11px]">
-                {coffeeDebt > 0 ? `Debt · ${coffeeDebt}` : 'Costs 1 glass'}
-              </span>
-            </div>
+            <span className="text-[22px]">☕</span>
+            <span className="font-mono-tight text-[12px] uppercase tracking-[0.22em] text-red-300 leading-none">Log Coffee</span>
+            <span className="font-mono-tight text-[9px] uppercase tracking-[0.22em] text-red-300 flex items-center gap-1">
+              {coffeeDebt > 0 && <Lock size={10} />}
+              {coffeeDebt > 0 ? `Debt · ${coffeeDebt}` : '−1 glass'}
+            </span>
           </button>
         </section>
 
@@ -1101,7 +1162,7 @@ function App() {
 
         {/* REWARDS */}
         <section className="mt-6">
-          <RewardZone glasses={glasses} coffeeDebt={coffeeDebt} line={currentLine} onOpen={(t) => { setModalJustUnlocked(false); setModalTier(t); }} />
+          <RewardZone glasses={glasses} coffeeDebt={coffeeDebt} line={currentLine} badge={currentBadge} onOpen={(t) => { setModalJustUnlocked(false); setModalTier(t); }} />
         </section>
 
         {/* FOOTER STATUS */}
