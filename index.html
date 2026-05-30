@@ -720,8 +720,9 @@ function VisualReveal({ src }) {
       <div className="relative" style={{ aspectRatio: '3 / 4' }}>
         <img src={src} alt="Visual reward" onClick={() => setFs(true)}
              onError={(e) => { e.currentTarget.style.display = 'none'; }}
-             className={`absolute inset-0 w-full h-full object-cover z-[1] cursor-zoom-in ${unblurred ? 'blur-unlocked' : 'blur-locked'}`} />
-        <div className={`absolute inset-0 ${unblurred ? 'blur-unlocked' : 'blur-locked'}`} style={{
+             className="absolute inset-0 w-full h-full object-cover z-[1] cursor-zoom-in"
+             style={{ opacity: unblurred ? 1 : 0, transition: 'opacity 700ms ease' }} />
+        <div className="absolute inset-0" style={{
           background:
             'radial-gradient(120% 80% at 20% 10%, rgba(232,201,122,0.55), rgba(13,10,26,0.0) 60%),' +
             'radial-gradient(80% 60% at 80% 90%, rgba(139,92,246,0.5), rgba(13,10,26,0.0) 60%),' +
