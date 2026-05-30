@@ -717,7 +717,7 @@ function VisualReveal({ src }) {
   }, [fs]);
   return (
     <div className="glass-gold rounded-2xl overflow-hidden">
-      <div className="relative aspect-[3/4]">
+      <div className="relative" style={{ aspectRatio: '3 / 4' }}>
         <img src={src} alt="Visual reward" onClick={() => setFs(true)}
              onError={(e) => { e.currentTarget.style.display = 'none'; }}
              className={`absolute inset-0 w-full h-full object-cover z-[1] cursor-zoom-in ${unblurred ? 'blur-unlocked' : 'blur-locked'}`} />
